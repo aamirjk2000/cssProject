@@ -1,0 +1,350 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ----global css------- */
+.text-theme {
+  color: #1b00d4;
+}
+
+.text-theme-dark {
+  color: #070038;
+}
+
+.global-btn {
+  background-color: #1b00d4;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* -----navbar css------ */
+.navbar a {
+  cursor: pointer;
+}
+
+.navbar .heading {
+  font-weight: bold;
+}
+
+.navbar .heading:hover {
+  color: #1b00d4;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    margin: 0 !important;
+  }
+}
+
+/* ----dropdown css------ */
+.dropbtn {
+  background-color: #1b00d4;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .dropbtn {
+    margin: 0;
+  }
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  padding: 5px 20px;
+  border: 1px solid #1b00d4;
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 5px 10px -5px #1b00d4;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.dropbtn:hover .material-symbols-outlined {
+  color: black !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  margin: auto;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* @media screen and (max-width: 600px) {
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+  }
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+  .dropdown-content a {
+    border-top: 1px solid #ddd;
+  }
+} */
+
+/* ----input tag css ----  */
+.button-box input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.button-box input:hover,
+.button-box input:focus {
+  border: none;
+}
+
+.button-box input::placeholder {
+  color: #000000;
+}
+
+@media screen and (min-width: 541px) {
+  .web-view {
+    display: block;
+  }
+  .buttons-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .web-view {
+    display: none !important;
+  }
+  .buttons-mobile {
+    display: block !important;
+  }
+  .buttons-mobile label {
+    background-color: #1b00d4;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    width: 60px;
+  }
+  .buttons-mobile input {
+    border: 1px solid #1b00d4;
+    outline: none;
+    padding: 3px;
+    border-radius: 10px;
+    margin: 8px 10px;
+  }
+
+  .buttons-mobile .search-box {
+    min-width: 100% !important;
+    padding: 5px 10px;
+    border: 1px solid #1b00d4;
+    border-radius: 8px;
+    color: black;
+    box-shadow: 0 5px 10px -5px #1b00d4;
+    background-color: transparent;
+    width: fit-content;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+  cursor: pointer;
+  color: white;
+}
+
+.sale input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #1b00d4 !important;
+  /* box-shadow: 0 5px 10px -5px rgba(27, 0, 212, 0.3); */
+}
+
+.sale input:hover,
+.sale input:focus {
+  border: none;
+}
+
+.sale input::placeholder {
+  color: #000000;
+}
+
+.sale .inner {
+  padding: 8px;
+  border: 1px solid #1b00d4;
+  border-radius: 8px;
+  color: black;
+  box-shadow: 0 5px 10px -5px #1b00d4;
+  background-color: transparent;
+}
+
+.sale .search-btn {
+  background-color: #1b00d4;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  width: 130px;
+  font-size: 14px;
+}
+
+.action-btn {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid #1b00d4;
+  /* box-shadow: 0 5px 10px -5px #1b00d4; */
+  background-color: #1b00d4;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 540px) {
+  .action-box {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .action-btn {
+    margin: 10px 0;
+  }
+}
+
+.dropdown-sale {
+  outline: none;
+  position: relative;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #1b00d4 !important;
+  /* box-shadow: 0 5px 10px -5px #1b00d4; */
+  width: 100%;
+  padding: 5px;
+}
+
+.dropbtn-sale {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent !important;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dropbtn-sale:hover,
+.dropbtn-sale:focus {
+  border: 1px solid #1b00d4;
+  color: black;
+  background-color: transparent;
+  width: fit-content;
+}
+
+.dropbtn-sale-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 15px;
+  padding: 5px 0;
+  border-radius: 10px;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-sale:hover .dropbtn-sale-content {
+  display: block;
+}
+
+.dropbtn-sale-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn-sale-content a:hover {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 540px) {
+  .accounts-btns .dropdown {
+    margin: 10px 0;
+  }
+  .accounts-btns {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.bill-receive input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.bill-receive input:hover,
+.bill-receive input:focus {
+  border: none;
+}
+
+.bill-receive input::placeholder {
+  color: #000000;
+}
+
+.bill-receive .box {
+  padding: 5px 10px;
+  border: 1px solid #1b00d4;
+  border-radius: 8px;
+  color: black;
+  /* box-shadow: 0 5px 10px -5px #1b00d4; */
+  background-color: transparent;
+}

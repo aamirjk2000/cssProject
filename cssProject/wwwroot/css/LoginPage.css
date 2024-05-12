@@ -1,0 +1,71 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.login-main {
+  background-image: url("../Images/loginBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 290px) {
+  .login-main .refer-box {
+    font-size: 15px;
+  }
+}
+
+.login-main h5,
+.login-main h3 {
+  color: #4f4e56;
+  font-weight: normal;
+}
+
+.login-main a {
+  text-decoration: none;
+}
+
+.login-main .box {
+  background-color: #eaf0f6;
+  max-width: 500px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.login-main input {
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.login-main .box input:hover,
+.login-main .box input:focus {
+  border: none;
+}
+
+.login-main input::placeholder {
+  color: #000000;
+}
+
+.text-theme {
+  color: #3e64ff;
+}
+
+.login-btn {
+  background-color: #3c59d5;
+  color: #f4f4f4;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 20px;
+}
