@@ -1,0 +1,48 @@
+﻿
+.btn-Edit {
+    color: royalblue;
+    padding: 1px;
+    margin:1px;
+    border:0px;
+}
+
+
+.btn-Del {
+    color: orangered;
+    padding: 1px;
+    margin: 1px;
+    border: 0px;
+}
+
+.btn-UnDel {
+    color: orangered;
+    padding: 1px;
+    margin: 1px;
+    border: 0px;
+}
+
+.btn-Add {
+    color:white;
+    background-color: royalblue;
+    width: 80px
+}
+
+.btn-Save {
+    color: white;
+    background-color: royalblue;
+    width: 80px
+}
+
+.btn-Back {
+    color: red;
+    background-color: gold;
+    width: 80px
+}
+
+.btn-trash{
+    color:red;
+}
+
+.btn-pencil{
+    color:blue;
+}

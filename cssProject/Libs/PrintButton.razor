@@ -1,0 +1,63 @@
+﻿@using AppliedReporting;
+@inject NavigationManager NavManager;
+
+@code {
+
+    [Parameter]
+    public ReportModel? PrintingModel { get; set; }
+
+    public bool? IsPrintModelAssigned { get; set; } = true;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        if (PrintingModel == null)
+        {
+            IsPrintModelAssigned = false;
+        }
+    }
+
+    public void Print(ReportType _ReportType)
+    {
+        #region Temp
+        //     if (_Reportmodel.ReportRenderAsync().Result)         // Render a report for preview or download...
+        //     {
+        //         if (_Reportmodel.OutputReport.ReportType == ReportType.HTML || _Reportmodel.OutputReport.ReportType == ReportType.Preview)
+        //         {
+        //             var ReportLink = _Reportmodel.OutputReport.GetFileLink();
+        //             NavManager.ToNavigate(ReportLink,)
+
+        //             return Page();
+        //         }
+        //         else
+        //         {
+        //             var FileName = $"{_Reportmodel.OutputReport.FileName}{_Reportmodel.OutputReport.FileExtention}";
+        //             return File(_Reportmodel.ReportBytes, _Reportmodel.OutputReport.MimeType, FileName);
+        //         }
+        //     }
+        #endregion
+
+    }
+}
+
+@if (true)
+{
+
+    
+        <div class="dropdown">
+            <button type="button" title="Print" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                <i class="bi bi-printer"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><button type="submit" id="print-1" class="btn btn-link border-0" @onclick="() => Print(AppliedReporting.ReportType.Preview)">Preview</button></li>
+                <li><button type="submit" id="print-2" class="btn btn-link border-0" @onclick="() => Print(AppliedReporting.ReportType.PDF)">PDF</button></li>
+                <li><button type="submit" id="print-3" class="btn btn-link border-0" @onclick="() => Print(AppliedReporting.ReportType.Excel)">Excel</button></li>
+                <li><button type="submit" id="print-4" class="btn btn-link border-0" @onclick="() => Print(AppliedReporting.ReportType.Word)">Word</button></li>
+                <li><button type="submit" id="print-5" class="btn btn-link border-0" @onclick="() => Print(AppliedReporting.ReportType.HTML)">HTML</button></li>
+            </ul>
+        </div>
+}
+else
+{
+    <button type="submit" id="print-error" class="btn btn-link border-0"><i class="bi bi-question-circle"></i></button>
+}

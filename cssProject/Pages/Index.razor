@@ -1,4 +1,6 @@
 ﻿@page "/"
+@using cssProject.Pages.Sale
+@inject NavigationManager NavManager;
 
 <div class="navigation-bar">
     <div class="container py-3">
@@ -31,6 +33,36 @@
     </div>
 </div>
 
+
+
+<div class="navigation-bar">
+    <div class="container py-3">
+        <!-- ----Navbar---- -->
+
+        <div class="d-md-flex align-items-center justify-content-between">
+            <div>
+                <img src="../Images/logo.png" alt="logo" />
+            </div>
+
+            <div class="mt-3 mt-lg-0 mt-md-0 nav-btns">
+                <!-- <a href="./Login/index.html"> -->
+                <button class="global-btn-bg" @onclick="SaleInvoicePage">
+                    
+                    Sale Invoice
+                </button>
+                <!-- </a> -->
+                <!-- <a href="./SignUpAndLogin/index.html"> -->
+                <button class="global-btn-bg">
+                    <span>
+                        <img src="../Images/signupBtnIcon.png" alt="loginIcon" />
+                    </span>
+                    Sign Up
+                </button>
+                <!-- </a> -->
+            </div>
+        </div>
+    </div>
+</div>
 <!-- ------BANNER------- -->
 <section class="hero-banner">
     <div class="container text-white text-center">
